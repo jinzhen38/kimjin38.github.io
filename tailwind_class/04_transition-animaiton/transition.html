@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex flex-col gap-y-4 items-center justify-center">
+    <!-- Transition 미적용 -->
+    <button
+      class="text-5xl bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
+    >
+      Hover me
+    </button>
+    <!-- Transition 적용 -->
+    <button
+      class="text-5xl bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-1000"
+    >
+      Hover me
+    </button>
+  </body>
+</html>
+
+<!-- 즉시 바뀌지 않고 부드럽게 전환되도록 만드는 기능 
+ transition : 모든 속성에 기본 transition 적용
+transition-colors : 색상 관련 속성만 transition
+transition-opacity : 투명도만 transition
+transition-transform : transform(회전, 크기, 이동 등)만 transition
+transition-all : 모든 속성에 transition 적용
+--> 
+
+<!-- 
+ease-linear : 일정한 속도
+ease-in : 천천히 시작 → 빠르게 끝
+ease-out : 빠르게 시작 → 천천히 끝
+ease-in-out : 천천히 시작 → 빠르게 → 천천히 끝
+-->
